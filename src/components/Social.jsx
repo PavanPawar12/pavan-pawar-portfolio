@@ -1,5 +1,4 @@
 import { FiGithub, FiLinkedin, FiMail} from "react-icons/fi";
-
 const SocialLinks = () => {
   return (
     <div className="flex gap-4 mt-6">

@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { FiMail, FiMapPin } from "react-icons/fi";
 import SocialLinks from "./Social.jsx";
