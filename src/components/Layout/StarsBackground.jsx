@@ -3,6 +3,7 @@ import { Points, PointMaterial } from "@react-three/drei";
 import { useRef } from "react";
 import * as random from "maath/random";
 
+
 function Stars() {
   const ref = useRef();
 

@@ -36,7 +36,6 @@ const Hero = () => {
           >
             Download Resume
           </a>
-
           <a
             href="#contact"
             className="px-5 py-3 rounded-xl border border-slate-400 font-medium hover:bg-gray-800 transition-colors"
