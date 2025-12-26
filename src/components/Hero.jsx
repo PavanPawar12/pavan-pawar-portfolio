@@ -1,15 +1,15 @@
 import React from "react";
-import profile from "../assets/profile.jpg";
+import profile1 from "../assets/profile1.png";
 import { motion } from "framer-motion";
 import SocialLinks from "./Social";
-
-
+import StarsBackground from "./Layout/StarsBackground";
 const Hero = () => {
   return (
     <section
       id="home"
       className="w-full max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-16 pt-24"
     >
+      <StarsBackground />
       {/* LEFT CONTENT */}
       <motion.div
         initial={{ x: -80, opacity: 0 }}
@@ -25,8 +25,8 @@ const Hero = () => {
         </h1>
 
         <p className="mt-4 text-lg text-slate-300 max-w-lg">
-          A B.Tech student and full-stack (MERN) developer who builds clean, responsive, and interactive web experiences.
-
+          A B.Tech student and full-stack (MERN) developer who builds clean,
+          responsive, and interactive web experiences.
         </p>
 
         <div className="mt-6 flex gap-4">
@@ -43,12 +43,10 @@ const Hero = () => {
           >
             Contact
           </a>
-
         </div>
         <div>
-          <SocialLinks/>
+          <SocialLinks />
         </div>
-        
       </motion.div>
 
       {/* RIGHT IMAGE */}
@@ -56,18 +54,28 @@ const Hero = () => {
         initial={{ scale: 0.7, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative"
+        className="relative flex justify-center items-center"
       >
-        {/* Glow border */}
-        <div className="absolute inset-0 rounded-3xl p-[3px] bg-gradient-to-r from-purple-500 to-blue-500 animate-spin-slow"></div>
+        {/* Glowing circular ring */}
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{
+            repeat: Infinity,
+            duration: 12,
+            ease: "linear",
+          }}
+          className="absolute w-52 h-52 md:w-72 md:h-72 rounded-full
+               bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500
+               blur-md opacity-80"
+        />
 
-        {/* Image frame */}
-        <div className="relative w-48 h-48 md:w-64 md:h-90 rounded-3xl overflow-hidden bg-white shadow-2xl">
+        {/* Image container */}
+        <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden bg-black shadow-2xl border-4 border-black">
           <motion.img
-            src={profile}
+            src={profile1}
             alt="Pavan Pawar"
-            className="w-full h-full object-contain"
-            animate={{ y: [0, -10, 0] }}
+            className="w-full h-full object-contain rounded-full"
+            // animate={{ y: [0, -10, 0] }}
             transition={{
               duration: 3,
               repeat: Infinity,
@@ -81,5 +89,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-

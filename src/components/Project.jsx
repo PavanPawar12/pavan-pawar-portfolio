@@ -10,6 +10,7 @@ const projects = [
     github: "https://github.com/PavanPawar12/job-portal",
     live: "#Not lived right now",
   },
+  
   {
     title: "TextUtils",
     description:
@@ -40,7 +41,7 @@ const Project = () => {
   return (
     <section
       id="projects"
-      className="w-full max-w-6xl mx-auto px-6 py-24"
+      className="w-full max-w-6xl mx-auto px-6 py-24 "
     >
       {/* Heading */}
       <div className="text-center mb-16">
@@ -53,7 +54,7 @@ const Project = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid gap-8 md:grid-cols-2">
+      <div className="grid gap-8 md:grid-cols-2 ">
         {projects.map((project, index) => (
           <div
             key={index}

@@ -10,7 +10,9 @@ function App() {
 
   return (
     <>
+      
       <Navbar/>
+
       <Hero/>
       <About/>
       <Project/>
