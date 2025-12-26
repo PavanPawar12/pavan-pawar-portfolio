@@ -31,7 +31,7 @@ const Hero = () => {
 
         <div className="mt-6 flex gap-4">
           <a
-            href="/Pavan_Pawar_CV.pdf"
+            href="/Pavan_Pawar_CV1.pdf"
             className="px-5 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold shadow-lg hover:scale-105 transition-all duration-300"
           >
             Download Resume

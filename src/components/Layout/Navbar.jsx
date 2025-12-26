@@ -21,7 +21,7 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-        <a href="/Pavan_Pawar_CV.pdf" className="ml-4 px-3 py-1 border rounded">
+        <a href="/Pavan_Pawar_CV1.pdf" className="ml-4 px-3 py-1 border rounded">
           Resume
         </a>
       </div>
