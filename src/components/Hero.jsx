@@ -1,5 +1,5 @@
 import React from "react";
-import profile1 from "../assets/profile1.png";
+import profile2 from "../assets/profile2.png";
 import { motion } from "framer-motion";
 import SocialLinks from "./Social";
 import StarsBackground from "./Layout/StarsBackground";
@@ -71,7 +71,7 @@ const Hero = () => {
         {/* Image container */}
         <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden bg-black shadow-2xl border-4 border-black">
           <motion.img
-            src={profile1}
+            src={profile2}
             alt="Pavan Pawar"
             className="w-full h-full object-contain rounded-full"
             // animate={{ y: [0, -10, 0] }}
